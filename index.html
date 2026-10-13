@@ -1,0 +1,551 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#242627">
+  <meta name="description" content="Portfólio de Érick Andrade — desenvolvimento web, análise de dados, bancos de dados e automação.">
+
+  <title>Érick Andrade — Desenvolvedor Web</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="app">
+
+    <!-- Navegação lateral -->
+    <aside class="rail" aria-label="Navegação lateral">
+      <a class="rail-logo" href="#inicio" aria-label="Início">EA</a>
+
+      <nav class="rail-nav">
+        <a class="active" href="#inicio" title="Início">⌂</a>
+        <a href="#sobre" title="Sobre">♙</a>
+        <a href="#projetos" title="Projetos">▤</a>
+        <a href="#habilidades" title="Habilidades">⌘</a>
+        <a href="#experiencia" title="Experiência">▥</a>
+        <a href="#contato" title="Contato">✉</a>
+      </nav>
+
+      <div class="rail-bottom">PORTFÓLIO · 2026</div>
+    </aside>
+
+    <!-- Cabeçalho -->
+    <header class="topbar">
+      <a class="brand" href="#inicio">
+        <span class="brand-mark">EA</span>
+        <span>
+          ÉRICK ANDRADE
+          <small>DESENVOLVEDOR | ANALISTA DE TI</small>
+        </span>
+      </a>
+
+      <nav class="top-links" aria-label="Menu principal">
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#jogo">Jogar</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#experiencia">Experiência</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <a class="top-status" href="#contato">
+        Disponível para oportunidades
+      </a>
+    </header>
+
+    <!-- Atalho flutuante para o jogo -->
+    <a
+      id="game-side-shortcut"
+      href="#jogo"
+      aria-label="Ir para a seção do jogo"
+      title="Bora jogar?"
+    >🎮</a>
+
+    <main class="content">
+
+      <!-- Apresentação principal -->
+      <section class="hero" id="inicio">
+        <canvas class="network" id="network" aria-hidden="true"></canvas>
+
+        <div class="hero-copy">
+          <div class="eyebrow">
+            <span class="pin">◆</span>
+            Olá, eu sou
+            <span class="line"></span>
+          </div>
+
+          <h1>
+            Érick<br>
+            <span class="accent">Andrade.</span>
+
+            <span class="role-line">
+              Desenvolvedor <em>web</em>.<br>
+              Analista de Sistemas.
+            </span>
+          </h1>
+
+          <p>
+            Estudante de Análise e Desenvolvimento de Sistemas,
+            apaixonado por tecnologia, dados e soluções que geram
+            resultados. Transformo ideias em projetos reais, unindo
+            desenvolvimento web, análise de dados e automação.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn primary" href="#projetos">
+              Ver projetos <span>↗</span>
+            </a>
+
+            <a class="btn" href="#contato">
+              Entrar em contato
+            </a>
+          </div>
+
+          <div class="hero-note">
+            Desenvolvimento · Dados · Soluções digitais
+          </div>
+        </div>
+
+        <div class="hero-graphic" aria-hidden="true">
+          <div class="graphic-grid"></div>
+          <div class="monogram">EA</div>
+
+          <div class="graphic-caption">
+            TECNOLOGIA<br>
+            IDEIAS<br>
+            RESULTADOS
+          </div>
+        </div>
+
+        <div class="hero-label">PORTFÓLIO / 2026</div>
+
+        <a class="scroll-hint" href="#projetos" aria-label="Rolar para projetos">
+          ↓
+        </a>
+      </section>
+
+      <!-- Projetos -->
+      <section class="section projects reveal" id="projetos">
+        <div class="section-head">
+          <div>
+            <div class="kicker">Trabalhos selecionados</div>
+            <h2>Projetos <span class="accent">em destaque.</span></h2>
+          </div>
+
+          <p>
+            Projetos publicados e experiências práticas que mostram
+            minha evolução em desenvolvimento web, gestão e produtividade.
+          </p>
+        </div>
+
+        <div class="filters" id="filters">
+          <button class="filter active" data-filter="Todos">Todos</button>
+          <button class="filter" data-filter="E-commerce">E-commerce</button>
+          <button class="filter" data-filter="Dashboard">Dashboard</button>
+          <button class="filter" data-filter="Produtividade">Produtividade</button>
+        </div>
+
+        <div class="feed" id="feed">
+
+          <!-- Projeto 1 -->
+          <article
+            class="project"
+            data-category="E-commerce"
+            data-search="doce explosão pipocas gourmet pedidos loja web"
+          >
+            <a
+              href="https://doceexplosao.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Abrir Doce Explosão"
+            >
+              <div class="project-art">
+                <img
+                  src="Fotos/doce-explosao.png.jpg"
+                  alt="Captura de tela do site Doce Explosão"
+                  loading="lazy"
+                >
+                <span class="project-badge">E-commerce</span>
+              </div>
+            </a>
+
+            <div class="project-body">
+              <h3>Doce Explosão</h3>
+
+              <p>
+                Site para pedidos de uma loja de pipocas gourmet,
+                com apresentação de produtos e experiência de compra intuitiva.
+              </p>
+
+              <div class="tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+
+              <a
+                class="project-link"
+                href="https://doceexplosao.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Acessar projeto <b>↗</b>
+              </a>
+            </div>
+          </article>
+
+          <!-- Projeto 2 -->
+          <article
+            class="project"
+            data-category="Dashboard"
+            data-search="dom peixaria adm controle vendas dashboard gráficos relatórios"
+          >
+            <a
+              href="https://dompeixariaadm.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Abrir Dom Peixaria ADM"
+            >
+              <div class="project-art">
+                <img
+                  src="Fotos/dom-peixaria.png.jpg"
+                  alt="Captura de tela do dashboard Dom Peixaria ADM"
+                  loading="lazy"
+                >
+                <span class="project-badge">Dashboard</span>
+              </div>
+            </a>
+
+            <div class="project-body">
+              <h3>Dom Peixaria ADM</h3>
+
+              <p>
+                Dashboard de controle de vendas com foco em
+                acompanhamento, relatórios e gestão de dados.
+              </p>
+
+              <div class="tags">
+                <span>Dashboard</span>
+                <span>Vendas</span>
+                <span>Dados</span>
+              </div>
+
+              <a
+                class="project-link"
+                href="https://dompeixariaadm.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Acessar projeto <b>↗</b>
+              </a>
+            </div>
+          </article>
+
+          <!-- Projeto 3 -->
+          <article
+            class="project"
+            data-category="E-commerce"
+            data-search="bella tron shirts loja roupas catálogo ecommerce moda"
+          >
+            <a
+              href="https://bellatronshirts.netlify.app/loja#"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Abrir Bella Tron Shirts"
+            >
+              <div class="project-art">
+                <img
+                  src="Fotos/bella-tron.png.jpg"
+                  alt="Captura de tela da loja Bella Tron Shirts"
+                  loading="lazy"
+                >
+                <span class="project-badge">E-commerce</span>
+              </div>
+            </a>
+
+            <div class="project-body">
+              <h3>Bella Tron Shirts</h3>
+
+              <p>
+                Projeto de loja de roupas, com catálogo de produtos
+                e navegação para experiência de compra online.
+              </p>
+
+              <div class="tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+
+              <a
+                class="project-link"
+                href="https://bellatronshirts.netlify.app/loja#"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Acessar projeto <b>↗</b>
+              </a>
+            </div>
+          </article>
+
+          <!-- Projeto 4 -->
+          <article
+            class="project"
+            data-category="Produtividade"
+            data-search="organização de estudos aplicação web planejamento rotina cronômetro produtividade"
+          >
+            <a
+              href="https://aquamarine-manatee-c81426.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Abrir Organização de Estudos"
+            >
+              <div class="project-art">
+                <img
+                  src="Fotos/organizacao-estudos.png.jpg"
+                  alt="Captura de tela da aplicação Organização de Estudos"
+                  loading="lazy"
+                >
+                <span class="project-badge">Produtividade</span>
+              </div>
+            </a>
+
+            <div class="project-body">
+              <h3>Organização de Estudos</h3>
+
+              <p>
+                Aplicação web para organização da rotina de estudos,
+                planejamento e acompanhamento de progresso.
+              </p>
+
+              <div class="tags">
+                <span>JavaScript</span>
+                <span>Firebase</span>
+                <span>Produtividade</span>
+              </div>
+
+              <a
+                class="project-link"
+                href="https://aquamarine-manatee-c81426.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Acessar projeto <b>↗</b>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- Habilidades -->
+      <section class="section reveal" id="habilidades">
+        <div class="section-head">
+          <div>
+            <div class="kicker">Stack & competências</div>
+            <h2>Habilidades <span class="accent">&amp; Competências.</span></h2>
+          </div>
+
+          <p>
+            Áreas de estudo e conhecimentos que venho aplicando
+            nos meus projetos.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card">
+            <div class="skill-icon">&lt;/&gt;</div>
+            <h3>Desenvolvimento Web</h3>
+            <p>
+              HTML, CSS, JavaScript, Firebase, JSON e fundamentos
+              de interfaces responsivas.
+            </p>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-icon">▥</div>
+            <h3>Análise de Dados &amp; Banco de Dados</h3>
+            <p>
+              SQL, Power BI, Excel, visualização de informações
+              e conceitos de modelagem.
+            </p>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-icon">⚙</div>
+            <h3>Automação &amp; Infra</h3>
+            <p>
+              Python, PowerShell, redes e fundamentos de suporte de TI.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Sobre mim -->
+      <section class="section reveal" id="sobre">
+        <div class="section-head">
+          <div>
+            <div class="kicker">Quem sou</div>
+            <h2>Tecnologia com foco <span class="accent">em pessoas.</span></h2>
+          </div>
+        </div>
+
+        <div class="about-grid">
+          <div class="portrait-frame">
+            <img
+              src="Fotos/retrato-erick.png.png"
+              alt="Retrato de Érick Andrade"
+              loading="lazy"
+            >
+          </div>
+
+          <div class="about-copy">
+            <p>
+              Graduando em Análise e Desenvolvimento de Sistemas,
+              reúno formação tecnológica e experiência no setor financeiro,
+              com atuação em atendimento consultivo e visão de negócios.
+              Sou certificado CEA pela ANBIMA e trago a vivência como
+              Especialista de Negócios para compreender necessidades,
+              analisar cenários e transformar problemas em soluções práticas.
+            </p>
+
+            <p>
+              Tenho foco no desenvolvimento de aplicações web, análise
+              de sistemas e automação, utilizando Python, JavaScript,
+              HTML5, CSS3, SQL e Firebase. Busco unir lógica de programação,
+              regras de negócio e experiência do usuário para criar soluções
+              digitais claras, funcionais e eficientes.
+            </p>
+
+            <p>
+              <strong>Busco oportunidades</strong> em Desenvolvimento Web,
+              Análise de Sistemas, Suporte Técnico ou posições de estágio
+              e júnior em TI.
+            </p>
+
+            <div class="skill-wrap">
+              <span class="chip">Python</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">HTML5 / CSS3</span>
+              <span class="chip">SQL</span>
+              <span class="chip">Firebase</span>
+              <span class="chip">Excel Avançado</span>
+              <span class="chip">Power BI · Intermediário</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experiência e formação -->
+      <section class="section reveal" id="experiencia">
+        <div class="section-head">
+          <div>
+            <div class="kicker">Trajetória profissional</div>
+            <h2>Experiência &amp; <span class="accent">formação.</span></h2>
+          </div>
+
+          <p>
+            Minha experiência corporativa complementa a formação
+            técnica e a prática com projetos.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <strong>Análise e Desenvolvimento de Sistemas</strong>
+            <small>UNESA · Formação acadêmica · 12/26 (conclusão)</small>
+            <p>
+              Estudos voltados a programação, desenvolvimento
+              de sistemas e banco de dados.
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <strong>Especialista de Negócios III</strong>
+            <small>
+              Pulse Client Experts · Produto Santander Select High · 2023–atual
+            </small>
+            <p>
+              Atendimento ao público de alta renda do Santander
+              e produtividade com negócios.
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <strong>Operador de Telemarketing / Supervisor Trainee</strong>
+            <small>Neobpo · 2021–2023</small>
+            <p>
+              Atendimento ao público com resolutividade educacional
+              para a Estácio.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contato -->
+      <section class="section reveal" id="contato">
+        <div class="contact-panel">
+          <div>
+            <div class="kicker">Vamos conversar</div>
+            <h2>
+              Vamos construir algo
+              <span class="accent">interessante.</span>
+            </h2>
+            <p>
+              Aberto a oportunidades de estágio, posições júnior
+              e projetos de tecnologia.
+            </p>
+          </div>
+
+          <div class="contact-actions">
+            <a class="btn primary" href="mailto:erickandrade1402@gmail.com">
+              Enviar e-mail ↗
+            </a>
+
+            <button class="btn" id="copyEmail" type="button">
+              Copiar e-mail
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Convite minimalista para o jogo externo -->
+      <section class="section reveal" id="jogo">
+        <div class="game-minimal">
+          <div class="game-minimal-icon" aria-hidden="true">🎮</div>
+
+          <div class="game-minimal-copy">
+            <span class="game-minimal-kicker">PAUSA RÁPIDA</span>
+            <h2>Topa um desafio?</h2>
+            <p>Teste sua estratégia no jogo da velha.</p>
+          </div>
+
+          <a
+            class="game-minimal-link"
+            href="https://jogodavelhai.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Jogar agora <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- Rodapé -->
+      <footer class="footer">
+        <span>
+          © <span id="year"></span> Érick Andrade · Portfólio profissional
+        </span>
+        <span>Desenvolvido com HTML, CSS &amp; JavaScript</span>
+      </footer>
+
+    </main>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
